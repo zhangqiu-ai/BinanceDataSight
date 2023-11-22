@@ -9,6 +9,9 @@ const fs = require('fs');
 const apiKey = process.env.API_KEY;
 const secretKey = process.env.SECRET_KEY;
 
+console.log(`API key: ${apiKey}`);
+console.log(`secret key: ${secretKey}`);
+
 // 创建 Express 应用实例
 const app = express();
 const port = process.env.PORT;
