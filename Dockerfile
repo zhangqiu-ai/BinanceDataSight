@@ -4,14 +4,13 @@ FROM node:latest
 # 创建并设置应用的工作目录
 WORKDIR /app
 
-# 安装 ping、vim 和 npm
-RUN apt-get update && \
-    apt-get install -y iputils-ping vim
-
-# 复制 package.json 和 package-lock.json（如果存在）
+# 首先，复制 package.json 和 package-lock.json（如果存在）
 COPY package*.json ./
 
 # 安装项目依赖
+RUN npm install
+
+# 安装 ping、vim
 RUN npm install
 
 # 复制所有源代码到工作目录
