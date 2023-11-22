@@ -41,7 +41,7 @@
 4. 启动应用：
 
     ```bash
-    node ./app.js
+    node app.js
     ```
 
 ## Docker 一键部署
