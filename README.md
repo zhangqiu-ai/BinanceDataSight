@@ -41,7 +41,7 @@
 4. 启动应用：
 
     ```bash
-    npm start
+    node ./app.js
     ```
 
 ## Docker 一键部署
@@ -56,7 +56,7 @@ docker run --name binancedata -d --restart always -p 3100:3100 \
    zhangqiuai/binancedata:latest
 ```
 
-这条命令会做以下几件事情：
+#### 这条命令会做以下几件事情：
 
     使用 --name binancedata 将容器命名为 binancedata。
     -d 参数表示在后台运行容器。
@@ -64,6 +64,11 @@ docker run --name binancedata -d --restart always -p 3100:3100 \
     -p 3100:3100 将容器的 3100 端口映射到主机的 3100 端口。
     -v /volume1/docker/binancedata-data:/data 将主机上的 /volume1/docker/binancedata-data 目录映射到容器的 /data 目录，用于持久化数据。
     zhangqiuai/binancedata:latest 指定使用的 Docker 镜像和标签。
+
+#### 部署成功后通过浏览器访问：
+
+    http://192.168.31.2:3100/
+    把192.168.31.2替换成自己的服务器地址
 
 ### 使用指南
 
@@ -76,7 +81,7 @@ docker run --name binancedata -d --restart always -p 3100:3100 \
 
 2. **查看账户信息**：
 
-   ![查看账户信息](https://img.zhangqiu.pro/file/e4b573824546a41b70dab.png)  <!-- 替换为实际的演示图片 -->
+   ![查看账户信息](https://img.zhangqiu.pro/file/ae4744384078e643a0fe3.png)  <!-- 替换为实际的演示图片 -->
 
    点击“查看账户信息”，在新页面查看您币安账户中各资产的余额和价格。
 
