@@ -362,5 +362,5 @@ app.get('/showChart', (req, res) => {
 
 // 启动服务器
 app.listen(port, () => {
-    console.log(`服务器运行在端口 ${port}`);
+    console.log(`服务器运行在 http://localhost:${port} 上`);
 });
