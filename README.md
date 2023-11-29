@@ -87,7 +87,7 @@ docker run --name binancedata -d --restart always -p 3100:3100 \
 
 3. **资产图表展示**：
 
-   ![资产图表展示](https://img.zhangqiu.pro/file/3439f65db1e4f16ae3389.png)  <!-- 替换为实际的演示图片 -->
+   ![资产图表展示](https://img.zhangqiu.pro/file/a7b05e43373c98d8f319f.gif)  <!-- 替换为实际的演示图片 -->
 
    点击“查看资产图表”，在新页面查看资产总额随时间的变化。
 
